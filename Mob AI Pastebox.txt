@@ -1,0 +1,31 @@
+Hostiles
+
+	Level 1 Field Mouse
+		/setblock ~ ~ ~ minecraft:mob_spawner 0 replace {EntityId:Silverfish,SpawnData:{CustomName:"Field Mouse [Lvl. 1]",CustomNameVisible:1}}
+
+	Level 1 Rat
+		/setblock ~ ~ ~ minecraft:mob_spawner 0 replace {EntityId:Silverfish,SpawnData:{CustomName:"Rat [Lvl. 1]",CustomNameVisible:1},Delay:500}
+
+	Level 1 Zombie Spawner
+
+	[Level 1 Skeleton]
+		/setblock ~ ~ ~ minecraft:mob_spawner 0 replace {EntityId:Skeleton,SpawnData:{SkeletonType:1,Equipment:[{id:267,Count:1,tag:{ench:[{id:34,lvl:1}],Unbreakable:1}},{},{},{},{id:298,Count:1,tag:{display:{color:1519359,Name: Lvl. 1 Skelly Cap}}}],DropChances:[0.1F,0.0F,0.0F,0.0F,0.1F],Attributes:[{Name:generic.movementSpeed,Base:0.2}]}}
+	
+	[Level 2 Spider]
+		/setblock ~ ~ ~ minecraft:mob_spawner 0 replace {EntityId:CaveSpider,SpawnData:{CustomName:"[Lvl. 2 Spider]",CustomNameVisible:1,Attributes:[{Name:generic.maxHealth,Base:18}]}}
+		
+
+Helpfuls
+
+	Swordsmith Villager
+		/summon Villager ~ ~1 ~ {CustomName:"SwordSmith",CustomNameVisible:1,Profession:5,Career:0,CareerLevel:1,Offers:{Recipes:[{maxUses:2147483647,uses:0,buy:{id:gold_ingot,Count:3},buyB:{id:iron_sword,Count:1},sell:{id:iron_sword,Count:1,tag:{ench:[{id:16,lvl:1}]}}}]},Attributes:[{Name:generic.movementSpeed,Base:0}],Invulnerable:1,HealF:10000000,Silent:1}
+		
+	Banker Villager
+		/summon Villager ~ ~1 ~ {CustomName:"Banker",CustomNameVisible:1,Profession:1,Career:0,CareerLevel:1,Offers:{Recipes:[{maxUses:2147483647,uses:0,buy:{id:gold_ingot,Count:10},sell:{id:gold_block,Count:1}},{maxUses:2147483647,uses:0,buy:{id:gold_block,Count:1},sell:{id:gold_ingot,Count:10}}]},Attributes:[{Name:generic.movementSpeed,Base:0}],Invulnerable:1,HealF:10000000,Silent:1}
+	
+Mission Characters
+
+	Farmer - Defend farm from hordes of zombies
+		/summon Villager ~ ~1 ~ {Profession:0,Career:1,Offers:{Recipes:[{maxUses:1,uses:0,buy:{id:rotten_flesh,Count:25},sell:{id:gold_block,Count:1}}]}}
+
+	
